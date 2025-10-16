@@ -20,9 +20,8 @@
             }
         }
     },
-    "pre_uninstall": "Stop-Process -Name 'Windscribe' -Force -ErrorAction SilentlyContinue; Stop-Service -Name 'WindscribeService' -ErrorAction SilentlyContinue; sc.exe stop WindscribeService | Out-Null",
     "uninstaller": {
-        "script": "$pf=$env:ProgramFiles; $path=Join-Path $pf 'Windscribe\\uninstall.exe'; if (Test-Path $path) { $p=Start-Process -FilePath $path -ArgumentList '/VERYSILENT' -WorkingDirectory (Split-Path $path) -PassThru -WindowStyle Hidden; $p.WaitForExit() }"
+        "script": "Start-Process -FilePath \"C:\\Program Files\\Windscribe\\uninstall.exe\" -ArgumentList \"/VERYSILENT\" -Wait -WindowStyle Hidden"
     },
     "checkver": "github",
     "autoupdate": {
