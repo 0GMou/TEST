@@ -19,7 +19,7 @@
     "uninstaller": {
         "script": "$pf=$env:ProgramFiles; $path=Join-Path $pf 'Windscribe\\uninstall.exe'; if (Test-Path $path) { $p=Start-Process -FilePath $path -ArgumentList '/VERYSILENT' -WorkingDirectory (Split-Path $path) -PassThru -WindowStyle Hidden; $p.WaitForExit() }"
     },
-    "checkver": "github",
+    "checkver": { "github": "Windscribe/Desktop-App" },
     "autoupdate": {
         "architecture": {
             "64bit": {
