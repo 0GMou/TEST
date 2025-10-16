@@ -9,32 +9,19 @@
             "url": "https://github.com/Windscribe/Desktop-App/releases/download/v2.17.9/Windscribe_2.17.9_amd64.exe",
             "hash": "91378b0597fa5320c8fe62520e644d5c864d0f7ae1aa7c85e0c772a6b744e867",
             "installer": {
-                "args": [
-                    "-silent"
-                ]
-            },
-            "uninstaller": {
-                "file": "C:\\Program Files\\Windscribe\\uninstall.exe",
-                "args": [
-                    "/VERYSILENT"
-                ]
+                "args": "-silent"
             }
         },
         "arm64": {
             "url": "https://github.com/Windscribe/Desktop-App/releases/download/v2.17.9/Windscribe_2.17.9_arm64.exe",
             "hash": "11091e698096af3b159ed73f891deacc6c46ccdcab0ffd3a1de789b094b0dec0",
             "installer": {
-                "args": [
-                    "-silent"
-                ]
-            },
-            "uninstaller": {
-                "file": "C:\\Program Files\\Windscribe\\uninstall.exe",
-                "args": [
-                    "/VERYSILENT"
-                ]
+                "args": "-silent"
             }
         }
+    },
+    "uninstaller": {
+        "script": "Start-Process -FilePath \"C:\\Program Files\\Windscribe\\uninstall.exe\" -ArgumentList \"/VERYSILENT\" -Wait -WindowStyle Hidden"
     },
     "checkver": "github",
     "autoupdate": {
