@@ -1,13 +1,13 @@
 {
-    "version": "2.17.9",
+    "version": "2.17.10",
     "description": "Windscribe Desktop App (nonportable). Requires administrator privileges.",
     "homepage": "https://github.com/Windscribe/Desktop-App",
     "license": "Proprietary",
     "notes": "This package runs the official vendor installer. Use an elevated PowerShell session (Run as Administrator).",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Windscribe/Desktop-App/releases/download/v2.17.9/Windscribe_2.17.9_amd64.exe",
-            "hash": "91378b0597fa5320c8fe62520e644d5c864d0f7ae1aa7c85e0c772a6b744e867",
+            "url": "https://github.com/Windscribe/Desktop-App/releases/download/v2.17.10/Windscribe_2.17.10_amd64.exe",
+            "hash": "9abb80ded6197b02b5ba2d4da44101bd289fb519cfc233de4b50e8dfeccc257b",
             "installer": {
                 "args": [
                     "-silent",
@@ -16,8 +16,8 @@
             }
         },
         "arm64": {
-            "url": "https://github.com/Windscribe/Desktop-App/releases/download/v2.17.9/Windscribe_2.17.9_arm64.exe",
-            "hash": "11091e698096af3b159ed73f891deacc6c46ccdcab0ffd3a1de789b094b0dec0",
+            "url": "https://github.com/Windscribe/Desktop-App/releases/download/v2.17.10/Windscribe_2.17.10_arm64.exe",
+            "hash": "d3c66101845cf64958044a37d8a790e0a363a7a7ada88ccaaa8d782762c2e541",
             "installer": {
                 "args": [
                     "-silent",
